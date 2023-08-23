@@ -1,8 +1,8 @@
 import express from 'express';
-import todoRouter from "../nodejs-expressjs-folder structure/to-do/to-do.router.js";
+import createTodo from "../nodejs-expressjs-folder structure/to-do/to-do.router.js";
 
 const application = express()
-application.use('/to-do',todoRouter)
+application.use('/to-do',createTodo)
 
 const PORT = process.env.PORT || 5000
 

@@ -15,4 +15,7 @@ const getTodo =(request, response) => {
     })
 }
 
-export default {createTodo,getTodo} 
+export {
+    createTodo,
+    getTodo
+} 
