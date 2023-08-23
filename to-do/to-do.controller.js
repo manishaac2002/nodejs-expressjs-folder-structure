@@ -1,4 +1,4 @@
-import express from 'express'
+//controllers
 
 const createTodo = (request, response)=>{
     //save to database
@@ -9,9 +9,9 @@ const createTodo = (request, response)=>{
 }
 const getTodo =(request, response) => {
     //get all data
-    response.json({
+    response.json({ 
         successfully: true,
-        data: [{ id: "1", text: 'Some Text' }]
+        data: [{ id: "1", text: 'Some dummy Text' }]
     })
 }
 
