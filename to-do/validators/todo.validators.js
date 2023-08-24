@@ -1,10 +1,15 @@
-const createTodo = (request, response)=>{
+const createTodoValidator = (request, response)=>{
     //text validator
     if (request.body.text) {
-        throw Error("Text is required")
+        response.json({
+            successfully:"true",
+            error:"error"    })
+        // throw Error("Text is required")
     }
     response.json({
         successfully: true,
         data: request.body
     })
 }
+
+export default createTodoValidator
